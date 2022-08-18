@@ -1,3 +1,3 @@
-<div class="input-container" *ngFor="let i of totalInputBox">
-  <input #i [value]="" class="input-container__input-box" type="text">
+<div class="input-container" *ngFor="let inp of totalInputBox;let i = index">
+  <input #id value="" (input)="getValue(id.value, i)" class="input-container__input-box" type="text">
 </div>
