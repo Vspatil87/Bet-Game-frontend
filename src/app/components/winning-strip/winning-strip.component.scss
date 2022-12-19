@@ -1,0 +1,17 @@
+.row-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid;
+  width: calc(100%/10);
+  border-top: 1px solid;
+}
+
+.row-one:first-child, .row-one:nth-child(2) {
+  border-left: 1px solid;
+}
