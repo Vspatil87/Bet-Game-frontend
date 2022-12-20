@@ -7,6 +7,7 @@ import { WinningStripComponent } from './winning-strip/winning-strip.component';
 import { HeaderButtonsComponent } from './header-buttons/header-buttons.component';
 import { PlayOptionsComponent } from './play-options/play-options.component';
 import { FooterComponent } from './footer/footer.component';
+import { InfoStripComponent } from './info-strip/info-strip.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     WinningStripComponent,
     HeaderButtonsComponent,
     PlayOptionsComponent,
-    FooterComponent
+    FooterComponent,
+    InfoStripComponent
   ],
   imports: [
     CommonModule
@@ -28,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     Range1000BtnComponent,
     HeaderButtonsComponent,
     PlayOptionsComponent,
-    FooterComponent
+    FooterComponent,
+    InfoStripComponent
   ]
 })
 

@@ -3,6 +3,19 @@
 .input-container {
   display: inline-flex;
   margin: 5px;
+  width: calc(100%/11);
+}
+
+.x-axis-multi-inputs {
+  font-family: 'Roboto Slab', serif;
+  display: inline-flex;
+  height: 25px;
+  width: calc(100%/12);
+  padding: 0;
+  border-radius: 5px;
+  font-size: large;
+  text-align: center;  
+  margin: 5px;
 }
 
 .input-container__input-box {

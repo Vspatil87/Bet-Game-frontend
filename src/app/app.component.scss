@@ -1,3 +1,8 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 16px);
+}
+
 .header {
   // border: 1px solid black;
 }
@@ -6,29 +11,35 @@
   border: 1px solid black;
 }
 
+.info-container {
+  // border: 1px solid black;
+}
+
 .button {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .play-options {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .main-center {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: none;
 }
 
 .side-bar {
-  width: 250px;
-  border: 2px solid black;
+  width: 300px;
+  border-right: 1px solid black;
 }
 
 .number-inputs {
   width: 100%;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .footer {

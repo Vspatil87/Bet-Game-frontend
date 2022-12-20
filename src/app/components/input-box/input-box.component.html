@@ -1,3 +1,7 @@
+<div class="x-axis-multi-inputs" *ngFor="let inp of totalInputBox2;let i = index">
+  <input #id value="" (input)="getValue(id.value, i)" class="input-container__input-box" type="text">
+</div>
+<br>
 <div class="input-container" *ngFor="let inp of totalInputBox;let i = index">
   <input #id value="" (input)="getValue(id.value, i)" class="input-container__input-box" type="text">
 </div>

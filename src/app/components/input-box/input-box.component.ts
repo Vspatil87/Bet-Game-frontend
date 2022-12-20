@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputBoxComponent implements OnInit {
   totalInputBox: Array<number> = [];
+  totalInputBox2: Array<number> = [1,1,1,1,1,1,1,1,1,1];
   inputValues: Array<number> = [];
   constructor() { 
     for (let i = 0; i < 100; i++) {
