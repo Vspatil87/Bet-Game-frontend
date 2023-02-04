@@ -1,6 +1,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-evenly;
+  height: 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
 }

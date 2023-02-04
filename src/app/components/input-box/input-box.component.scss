@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
-.input-container {
-  display: inline-flex;
-  margin: 5px;
-  width: calc(100%/11);
-}
+// .input-container {
+//   display: inline-flex;
+//   margin: 5px;
+//   width: calc(100%/11);
+// }
 
 .x-axis-multi-inputs {
   font-family: 'Roboto Slab', serif;
@@ -14,7 +14,7 @@
   padding: 0;
   border-radius: 5px;
   font-size: large;
-  text-align: center;  
+  text-align: center;
   margin: 5px;
 }
 
@@ -25,5 +25,75 @@
   padding: 0;
   border-radius: 5px;
   font-size: large;
-  text-align: center;  
+  text-align: center;
+  // width: calc(100%/12);
+}
+
+.block-text {
+  font-family: 'Roboto Slab', serif;
+  height: 25px;
+  width: 53px;
+  padding: 0;
+  border-radius: 5px;
+  font-size: large;
+  text-align: center;
+}
+
+.row-one {
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  gap: 0.5rem;
+  margin: 5px;
+  height: 25px;
+}
+
+.row-two {
+  display: grid;
+  grid-column: auto;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.5rem;
+  margin: 5px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid;
+  width: calc(100%/12);
+  border-bottom: 1px solid;
+}
+
+.row-one:first-child,
+.row-one:nth-child(2) {
+  // border-left: 1px solid;
+}
+
+.input-container {
+  display: grid;
+  grid-column: auto;
+  // grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 0fr);
+  // gap: 0.5rem;
+  // margin: 5px;
+}
+
+.column-1 {
+  display: grid;
+  height: 100%;
+  margin: 4px;
+  // grid-row-gap: 0.5rem;
+}
+
+.vertical-inputs {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  height: 25px;
+  width: 50px;
+  padding: 0;
+  border-radius: 5px;
+  font-size: large;
+  text-align: center;
+  // width: calc(100%/12);
 }

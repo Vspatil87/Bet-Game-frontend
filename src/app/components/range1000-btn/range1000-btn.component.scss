@@ -1,15 +1,22 @@
+.strip-container {
+  height: 100%;
+}
+
 .row-one {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .columns {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-right: 1px solid;
   width: calc(100%/10);
   border-bottom: 1px solid;
+  height: 100%;
 }
 
 .row-one:first-child,

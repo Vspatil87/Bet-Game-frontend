@@ -6,22 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-box.component.scss']
 })
 export class InputBoxComponent implements OnInit {
+  winningList: Array<number> = [];
   totalInputBox: Array<number> = [];
-  totalInputBox2: Array<number> = [1,1,1,1,1,1,1,1,1,1];
+  totalInputBox2: Array<number> = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
   inputValues: Array<number> = [];
-  constructor() { 
+  constructor() {
     for (let i = 0; i < 100; i++) {
-      this.totalInputBox[i] = i;         
+      this.totalInputBox[i] = i;
     }
     this.inputValues.length = 10000;
     this.inputValues.fill(0);
-  }  
-  public getValue(input: string, i: number): void { 
+  }
+  public getValue(input: string, i: number): void {
     let value: number = parseInt(input);
     if (isNaN(value)) {
       value = 0;
     }
     this.inputValues[i] = value;
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    for (let i = 0; i < 10; i++) {
+      this.winningList[i] = i;
+    }
+  }
 }

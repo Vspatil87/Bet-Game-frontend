@@ -1,7 +1,20 @@
-<div class="x-axis-multi-inputs" *ngFor="let inp of totalInputBox2;let i = index">
+<!-- <div class="x-axis-multi-inputs" *ngFor="let inp of totalInputBox2;let i = index">
   <input #id value="" (input)="getValue(id.value, i)" class="input-container__input-box" type="text">
 </div>
 <br>
 <div class="input-container" *ngFor="let inp of totalInputBox;let i = index">
   <input #id value="" (input)="getValue(id.value, i)" class="input-container__input-box" type="text">
+</div> -->
+<div class="row-one">
+  <span class="block-text">Block</span>
+  <input *ngFor="let item of winningList" class="input-container__input-box">
+</div>
+<div class="input-container">
+  <div class="column-1">
+    <input *ngFor="let item of winningList" type="text" class="vertical-inputs">
+  </div>
+  <div class="row-two">
+    <input *ngFor="let inp of totalInputBox;let i = index" #id value="" (input)="getValue(id.value, i)"
+      class="input-container__input-box" type="text">
+  </div>
 </div>
