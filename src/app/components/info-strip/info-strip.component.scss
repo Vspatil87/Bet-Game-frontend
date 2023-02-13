@@ -1,3 +1,6 @@
+$strip-color: #f1953f;
+$border-color: #000000;
+
 .strip-container {
   height: 100%;
 }
@@ -5,21 +8,73 @@
 .row-one {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50%;
+  justify-content: space-around;
+  height: calc(50% - 1px);
+  border-top: 1px solid $border-color;
+  width: 100%;
+  background: $strip-color;
 }
 
-.columns {
+.first-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid;
-  width: calc(100%/10);
-  border-bottom: 1px solid;
+  width: 20%;
   height: 100%;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
 }
 
-.row-one:first-child,
-.row-one:nth-child(2) {
-  border-left: 1px solid;
+.second-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+}
+
+.third-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+}
+
+.fourth-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+}
+
+.fifth-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+}
+
+.sixth-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
+}
+
+.seventh-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid $border-color;
 }

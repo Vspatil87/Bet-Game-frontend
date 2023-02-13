@@ -1,7 +1,60 @@
+$border-color: #000000;
+$game-name-background: linear-gradient(to right, #f85032 0%, #e73827  51%, #f85032  100%);
+$multi-no-btn-background: linear-gradient(to right, #F2994A 0%, #F2C94C  51%, #F2994A  100%);
+$LP-background: #b47b4b;
+
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  height: 100%;
+  margin-top: 1px;
+}
+
+.game-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid $border-color;
+  background: $game-name-background;
+}
+
+.multi-no-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid $border-color;
+  background: $multi-no-btn-background;
+}
+
+.LP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 99%;
+  border-right: 1px solid $border-color;
+  background: $LP-background;
+}
+
+.series-type-container {
+  display: flex;
   justify-content: space-evenly;
-  border-left: 1px solid;
-  border-right: 1px solid;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.FP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }

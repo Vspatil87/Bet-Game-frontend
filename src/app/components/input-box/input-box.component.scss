@@ -1,99 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+$border-color: #000000;
 
-// .input-container {
-//   display: inline-flex;
-//   margin: 5px;
-//   width: calc(100%/11);
-// }
-
-.x-axis-multi-inputs {
+.input-container-input-box {
   font-family: 'Roboto Slab', serif;
-  display: inline-flex;
   height: 25px;
-  width: calc(100%/12);
+  width: calc(100%);
   padding: 0;
   border-radius: 5px;
-  font-size: large;
   text-align: center;
-  margin: 5px;
 }
 
-.input-container__input-box {
-  font-family: 'Roboto Slab', serif;
+.block-text,
+.qty-text,
+.pts-text {
+  font-family: "Roboto Slab", serif;
   height: 25px;
-  width: 50px;
-  padding: 0;
-  border-radius: 5px;
-  font-size: large;
-  text-align: center;
-  // width: calc(100%/12);
-}
-
-.block-text {
-  font-family: 'Roboto Slab', serif;
-  height: 25px;
-  width: 53px;
-  padding: 0;
-  border-radius: 5px;
-  font-size: large;
+  width: calc(100%);
+  padding: 0px 2px;
+  border: none;
   text-align: center;
 }
 
 .row-one {
   display: flex;
-  // align-items: center;
-  // justify-content: center;
   gap: 0.5rem;
-  margin: 5px;
-  height: 25px;
+  margin: 0px;
+  height: calc(100% / 11 - 0.5rem);
+  width: 100%;
 }
 
-.row-two {
-  display: grid;
-  grid-column: auto;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-  gap: 0.5rem;
-  margin: 5px;
-}
-
-.columns {
+.row-one {
   display: flex;
-  justify-content: center;
-  border-right: 1px solid;
-  width: calc(100%/12);
-  border-bottom: 1px solid;
-}
-
-.row-one:first-child,
-.row-one:nth-child(2) {
-  // border-left: 1px solid;
-}
-
-.input-container {
-  display: grid;
-  grid-column: auto;
-  // grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 0fr);
-  // gap: 0.5rem;
-  // margin: 5px;
-}
-
-.column-1 {
-  display: grid;
-  height: 100%;
-  margin: 4px;
-  // grid-row-gap: 0.5rem;
-}
-
-.vertical-inputs {
-  font-family: 'Roboto Slab', serif;
-  display: flex;
-  height: 25px;
-  width: 50px;
-  padding: 0;
-  border-radius: 5px;
-  font-size: large;
-  text-align: center;
-  // width: calc(100%/12);
+  align-items: center;
+  height: calc((100%/11) - 0px);
+  border-bottom: 0px solid $border-color;
+  padding: 0 0.5rem;
+  width: calc(100% - 1rem);
 }
