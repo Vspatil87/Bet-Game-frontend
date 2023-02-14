@@ -21,6 +21,9 @@ $even-series-gradient: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb34
   height: 100%;
   width: 100%;
   border-right: 1px solid $border-color;
+  font-family: Poppins-Medium;
+  font-size: 11pt;
+  font-weight: 500;
 }
 
 .button:nth-of-type(odd) {

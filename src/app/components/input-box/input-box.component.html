@@ -1,66 +1,128 @@
-<div class="row-one">
-  <input value="Block" class="block-text">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input value="Qty." class="qty-text">
-  <input value="Pts." class="pts-text">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
-</div>
-<div class="row-one">
-  <input class="input-container-input-box">
-  <input *ngFor="let item of winningList" class="input-container-input-box">
-  <input class="input-container-input-box">
-  <input class="input-container-input-box">
+<div class="input-container">
+  <div class="row-one">
+    <input value="Block" class="block-text">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input value="Qty." class="qty-text">
+    <input value="Pts." class="pts-text">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
+  <div class="display-row">
+    <span class="display-number"></span>
+    <span class="display-number" *ngFor="let item of winningList; let i = index;">{{1000 + i}}</span>
+    <span class="display-number"></span>
+    <span class="display-number"></span>
+  </div>
+  <div class="row-one">
+    <input class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input class="input-container-input-box">
+    <input class="input-container-input-box">
+  </div>
 </div>

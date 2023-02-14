@@ -1,0 +1,95 @@
+$border-color: #000000;
+$print-btn-background: #f1953f;
+$reset-btn-background: #f1953f;
+$trn-btn-background: #f1953f;
+$adv-draw-btn-background: #f1953f;
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: calc(4px + 0.5rem);
+  height: 100%;
+  margin-top: 1px;
+  font-family: Poppins-Medium;
+  font-size: 11pt;
+  font-weight: 500;
+}
+
+.btn-container {
+  display: flex;
+  width: 50%;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  height: 25px;
+}
+
+.print-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid $border-color;
+  background: $print-btn-background;
+}
+
+.reset-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid $border-color;
+  background: $reset-btn-background;
+}
+
+.trn-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 99%;
+  border-right: 1px solid $border-color;
+  background: $trn-btn-background;
+}
+
+.adv-draw-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 99%;
+  border-right: 1px solid $border-color;
+  background: $adv-draw-btn-background;
+}
+
+.barcode-container {
+  display: flex;
+  width: calc(40% - 1rem);
+  justify-content: flex-end;
+}
+
+.barcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.total-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 10%;
+}
+
+.qty,
+.pts {
+  height: 100%;
+  width: calc(100%);
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+}
