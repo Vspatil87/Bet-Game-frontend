@@ -1,14 +1,14 @@
 <div class="strip-container">
   <div class="row-one">
-    <span class="button">0000-0999</span>
-    <span class="button">1000-1999</span>
-    <span class="button">2000-2999</span>
-    <span class="button">3000-3999</span>
-    <span class="button">4000-4999</span>
-    <span class="button">5000-5999</span>
-    <span class="button">6000-6999</span>
-    <span class="button">7000-7999</span>
-    <span class="button">8000-8999</span>
-    <span class="button">9000-9999</span>
+    <span [ngClass]="{'active': (start === 0000)}" class="button" (click)="setStartValues(0000, 0999)">0000-0999</span>
+    <span [ngClass]="{'active': (start === 1000)}" class="button" (click)="setStartValues(1000, 1999)">1000-1999</span>
+    <span [ngClass]="{'active': (start === 2000)}" class="button" (click)="setStartValues(2000, 2999)">2000-2999</span>
+    <span [ngClass]="{'active': (start === 3000)}" class="button" (click)="setStartValues(3000, 3999)">3000-3999</span>
+    <span [ngClass]="{'active': (start === 4000)}" class="button" (click)="setStartValues(4000, 4999)">4000-4999</span>
+    <span [ngClass]="{'active': (start === 5000)}" class="button" (click)="setStartValues(5000, 5999)">5000-5999</span>
+    <span [ngClass]="{'active': (start === 6000)}" class="button" (click)="setStartValues(6000, 6999)">6000-6999</span>
+    <span [ngClass]="{'active': (start === 7000)}" class="button" (click)="setStartValues(7000, 7999)">7000-7999</span>
+    <span [ngClass]="{'active': (start === 8000)}" class="button" (click)="setStartValues(8000, 8999)">8000-8999</span>
+    <span [ngClass]="{'active': (start === 9000)}" class="button" (click)="setStartValues(9000, 9999)">9000-9999</span>
   </div>
 </div>

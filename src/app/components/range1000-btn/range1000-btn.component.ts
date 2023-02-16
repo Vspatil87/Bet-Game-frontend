@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-range1000-btn',
@@ -7,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Range1000BtnComponent implements OnInit {
   winningList: Array<number> = [];
-  constructor() {
-    for (let i = 0; i < 10; i++) {
-      this.winningList[i] = i;
-    }
-  }
+  start: number = 0;
+  end: number = 999;
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void {
+    this.setStartValues(this.start, this.end)
   }
 
+  public setStartValues(start: number, end: number) {
+    console.log(start, end);
+    this.start = start;
+    this.end = end;
+    this.sharedService.sendStartValue(start);
+  }
 }

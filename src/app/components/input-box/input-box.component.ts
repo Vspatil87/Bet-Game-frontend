@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-input-box',
   templateUrl: './input-box.component.html',
@@ -7,23 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputBoxComponent implements OnInit {
   winningList: Array<number> = [];
-  totalInputBox: Array<number> = [];
-  totalInputBox2: Array<number> = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-  inputValues: Array<number> = [];
-  constructor() {
-    for (let i = 0; i < 100; i++) {
-      this.totalInputBox[i] = i;
-    }
-    this.inputValues.length = 10000;
-    this.inputValues.fill(0);
+  start: number = 0;
+
+  constructor(private sharedService: SharedService) {
+    this.sharedService.initialStart$.subscribe((startValue) => {
+      this.start = startValue;
+    });
   }
-  public getValue(input: string, i: number): void {
-    let value: number = parseInt(input);
-    if (isNaN(value)) {
-      value = 0;
-    }
-    this.inputValues[i] = value;
-  }
+
   ngOnInit(): void {
     for (let i = 0; i < 10; i++) {
       this.winningList[i] = i;

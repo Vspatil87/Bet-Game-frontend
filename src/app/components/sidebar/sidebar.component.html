@@ -1,8 +1,8 @@
 <div class="sidebar-container">
   <div class="row-one">
     <div class="col1">
-      <span class="page-up">Page Up</span>
-      <span class="page-down">Page Down</span>
+      <span (click)="pageUp(value)" class="page-up">Page Up</span>
+      <span (click)="pageDown(value)" class="page-down">Page Down</span>
     </div>
     <div class="col2">
       <span class="all"><input type="checkbox" name="" id=""> All</span>
@@ -10,14 +10,16 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start}} - {{start + 99}}</span>
+      <span (click)="setValues(start)" [ngClass]="{'active': (value <= start)}" class="series">
+        {{start}} - {{start + 99}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2"></div>
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 100}} - {{start + 199}}</span>
+      <span (click)="setValues(start + 100)" [ngClass]="{'active': (value >= (start + 100) && value < (start + 200))}"
+        class="series">{{start + 100}} - {{start + 199}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2">
@@ -26,7 +28,8 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 200}} - {{start + 299}}</span>
+      <span (click)="setValues(start + 200)" [ngClass]="{'active': (value >= (200 + start) && value < (300 + start))}"
+        class="series">{{start + 200}} - {{start + 299}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2">
@@ -35,7 +38,8 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 300}} - {{start + 399}}</span>
+      <span (click)="setValues(start + 300)" [ngClass]="{'active': (value >= (300 + start) && value < (400 + start))}"
+        class="series">{{start + 300}} - {{start + 399}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2">
@@ -44,7 +48,8 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 400}} - {{start + 499}}</span>
+      <span (click)="setValues(start + 400)" [ngClass]="{'active': (value >= (400 + start) && value < (500 + start))}"
+        class="series">{{start + 400}} - {{start + 499}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2">
@@ -53,7 +58,8 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 500}} - {{start + 599}}</span>
+      <span (click)="setValues(start + 500)" [ngClass]="{'active': (value >= (500 + start) && value < (600 + start))}"
+        class="series">{{start + 500}} - {{start + 599}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2">
@@ -62,28 +68,32 @@
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 600}} - {{start + 699}}</span>
+      <span (click)="setValues(start + 600)" [ngClass]="{'active': (value >= (600 + start) && value < (700 + start))}"
+        class="series">{{start + 600}} - {{start + 699}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2"></div>
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 700}} - {{start + 799}}</span>
+      <span (click)="setValues(start + 700)" [ngClass]="{'active': (value >= (700 + start) && value < (800 + start))}"
+        class="series">{{start + 700}} - {{start + 799}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2"></div>
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 800}} - {{start + 899}}</span>
+      <span (click)="setValues(start + 800)" [ngClass]="{'active': (value >= (800 + start) && value < (900 + start))}"
+        class="series">{{start + 800}} - {{start + 899}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2"></div>
   </div>
   <div class="row-one">
     <div class="col1">
-      <span class="series">{{start + 900}} - {{start + 999}}</span>
+      <span (click)="setValues(start + 900)" [ngClass]="{'active': (value >= (900 + start) && value < (1000 + start))}"
+        class="series">{{start + 900}} - {{start + 999}}</span>
       <span class="points"><input type="checkbox" name="" id="">(Pts 2)</span>
     </div>
     <div class="col2"></div>

@@ -24,6 +24,7 @@ $even-series-gradient: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb34
   font-family: Poppins-Medium;
   font-size: 11pt;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .button:nth-of-type(odd) {
@@ -36,4 +37,8 @@ $even-series-gradient: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb34
 
 .button:last-child {
   border-right: none;
+}
+
+.active {
+  box-shadow: rgb(0 0 0 / 17%) 0px -23px 25px 0px inset, rgb(0 0 0 / 15%) 0px -36px 30px 0px inset, rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, rgb(0 0 0 / 6%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 0px 0px, rgb(0 0 0 / 9%) 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px;
 }
