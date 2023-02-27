@@ -8,8 +8,10 @@ import { Subject } from 'rxjs';
 export class SharedService {
   private startValueSource = new Subject<number>();
   private intialStartValueSource = new Subject<number>();
+  private seriesTypeSource = new Subject<number>();
   startValue$ = this.startValueSource.asObservable();
   initialStart$ = this.intialStartValueSource.asObservable();
+  seriesType$ = this.seriesTypeSource.asObservable();
 
   constructor() { }
 
@@ -19,5 +21,9 @@ export class SharedService {
 
   sendIntialStartValue(value: number) {
     this.intialStartValueSource.next(value);
+  }
+  
+  sendSeriesType(value: number) {
+    this.seriesTypeSource.next(value); // 0 -> All , 1 -> Odd , 2 -> Even
   }
 }

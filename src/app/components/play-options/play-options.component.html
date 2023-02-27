@@ -3,9 +3,9 @@
   <div class="multi-no-btn">Multi Number</div>
   <div class="LP">LP</div>
   <div class="series-type-container">
-    <span><input type="radio" name="series-type" id="">All</span>
-    <span><input type="radio" name="series-type" id="">Even</span>
-    <span><input type="radio" name="series-type" id="">Odd</span>
+    <span><input checked (click)="setSeriesType('All')" type="radio" name="series-type" id="">All</span>
+    <span><input (click)="setSeriesType('Even')" type="radio" name="series-type" id="">Even</span>
+    <span><input (click)="setSeriesType('Odd')" type="radio" name="series-type" id="">Odd</span>
   </div>
   <div class="FP"><input type="checkbox"> FP</div>
 </div>

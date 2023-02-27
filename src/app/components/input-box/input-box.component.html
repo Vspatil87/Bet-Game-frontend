@@ -1,7 +1,7 @@
 <div class="input-container">
   <div class="row-one">
     <input value="Block" class="block-text">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
+    <input *ngFor="let item of winningList" class="input-container-input-box color-input">
     <input value="Qty." class="qty-text">
     <input value="Pts." class="pts-text">
   </div>
@@ -12,10 +12,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue((start + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -24,10 +26,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 10) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -36,10 +40,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 20) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -48,10 +54,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 30) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -60,10 +68,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 40) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -72,10 +82,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 50) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -84,10 +96,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 60) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -96,10 +110,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 70) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -108,10 +124,12 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 80) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
   <div class="display-row">
     <span class="display-number"></span>
@@ -120,9 +138,11 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box">
-    <input *ngFor="let item of winningList" class="input-container-input-box">
-    <input class="input-container-input-box">
-    <input class="input-container-input-box">
+    <input class="input-container-input-box color-input">
+    <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
+      (input)="setValue(((start + 90) + i), $event)"
+      [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
+    <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
+    <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">
   </div>
 </div>
