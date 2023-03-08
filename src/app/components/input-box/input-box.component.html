@@ -12,9 +12,9 @@
     <span class="display-number"></span>
   </div>
   <div class="row-one">
-    <input class="input-container-input-box color-input">
+    <input class="input-container-input-box color-input" (input)="setMultiValues('y', start, $event)">
     <input *ngFor="let item of winningList; let i = index;" class="input-container-input-box"
-      (input)="setValue((start + i), $event)"
+      (input)="setValue((start + i), $event)" [value]="valueArray[start + i] === 0 ? '' : valueArray[start + i]"
       [disabled]="(item%2 === 0 && seriesType === 1) ? true : (item%2 !== 0 && seriesType === 2) ? true : false">
     <input class="input-container-input-box qty-color-input" [disabled]="qtyDisabled">
     <input class="input-container-input-box pts-color-input" [disabled]="ptsDisabled">

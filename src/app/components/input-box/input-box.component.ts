@@ -30,7 +30,7 @@ export class InputBoxComponent implements OnInit {
       this.winningList[i] = i;
     }
     // if (this._electronService.isElectronApp){
-    //   this._electronService.ipcRenderer.sendSync('save', 123)
+    //   // this._electronService.ipcRenderer.sendSync('save', 123)
     //   this._electronService.ipcRenderer.on("sigin", (event, args) => {
     //     console.log((args));
     //   });
@@ -39,7 +39,7 @@ export class InputBoxComponent implements OnInit {
       window.electronAPI.setTitle('Bet-Game!');
     }
   }
-  
+
   public setValue(index: number, event: any) {
     let val = parseInt(event.target.value);
     if (!isNaN(val)) {
@@ -48,5 +48,26 @@ export class InputBoxComponent implements OnInit {
       this.valueArray[index] = 0;
     }
     console.log("value array == ", this.valueArray);
+  }
+
+  public setMultiValues(identifier: string, start: number, event: any) {
+    let value = parseInt(event.target.value);
+    console.log(identifier, value);
+    if (isNaN(value)) {
+      value = 0;
+    }
+    for (let i = 0; i < 10; i++) {
+      if (this.seriesType === 1) {
+        if (i % 2 !== 0) {
+          this.valueArray[start + i] = value;
+        }
+      } else if (this.seriesType === 2) {
+        if (i % 2 === 0) {
+          this.valueArray[start + i] = value;
+        }
+      } else {
+        this.valueArray[start + i] = value;
+      }
+    }
   }
 }
